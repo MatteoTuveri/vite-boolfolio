@@ -16,8 +16,8 @@ export default {
         getApiproject(){
       axios.get(this.store.api + 'projects/'+ this.$route.params.slug).then((res)=>{
         console.log(res.data.project)
-        if (res.data.project[0]) {
-            this.project = res.data.project[0]
+        if (res.data.project) {
+            this.project = res.data.project
         }
         else{
             this.$route.push({name:'not-found'})
