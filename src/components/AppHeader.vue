@@ -5,6 +5,7 @@
         <a class="navbar-brand">Navbar</a>
         <router-link :to="{ name: 'home' }" class="mx-2 nav-link" active-class="active">Home</router-link>
         <router-link :to="{ name: 'projects' }" class="mx-2 nav-link" active-class="active">Projects</router-link>
+        <router-link :to="{ name: 'contacts' }" class="mx-2 nav-link" active-class="active">Contacts</router-link>
       </div>
       <form class="d-flex" role="search">
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
