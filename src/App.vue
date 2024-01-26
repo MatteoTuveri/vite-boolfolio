@@ -1,6 +1,6 @@
 <template>
     <AppHeader/>
-    <router-view></router-view>
+    <router-view :key="$route.path"></router-view>
 </template>
 
 <script>
